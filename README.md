@@ -359,7 +359,7 @@ The test suite covers:
 Expected result:
 
 ```text
-14 passed
+16 passed
 ```
 
 ## Environment Configuration
