@@ -60,7 +60,7 @@ Full-Auth-Flask-Backend-Productivity-App/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone git@github.com:tabby-Chege/Full-Auth-Flask-Backend-Productivity-App.git
 cd Full-Auth-Flask-Backend-Productivity-App
 ```
 
