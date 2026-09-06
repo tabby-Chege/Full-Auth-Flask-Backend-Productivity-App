@@ -305,3 +305,25 @@ def test_pagination(client):
     assert data["pagination"]["total"] == 3
     assert data["pagination"]["pages"] == 2
     assert data["pagination"]["has_next"] is True
+def test_signup_missing_credentials(client):
+    response = client.post(
+        "/signup",
+        json={
+            "username": "Tabby"
+        }
+    )
+
+    assert response.status_code == 400
+    assert response.get_json()["error"] == "Username and password are required"
+
+
+def test_login_missing_credentials(client):
+    response = client.post(
+        "/login",
+        json={
+            "username": "Tabby"
+        }
+    )
+
+    assert response.status_code == 400
+    assert response.get_json()["error"] == "Username and password are required"
